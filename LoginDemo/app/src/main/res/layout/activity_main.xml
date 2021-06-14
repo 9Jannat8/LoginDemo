@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginBottom="20dp"
+        />
+    
+    <EditText
+        android:id="@+id/usernameId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFFFF"
+        android:hint="Username"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+    
+    <EditText
+        android:id="@+id/passwordId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFFFF"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/loginId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A6657B"
+        android:textSize="20sp"
+        android:textColor="#FFFFFFFF"
+        android:text="Login"/>
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of incorrect attempts"
+        android:textColor="#FFFFFFFF"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
